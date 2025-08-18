@@ -51,11 +51,10 @@ layout: compress
                 {{ words | divided_by:180 }} mins
             {% endif %} read
         </span>
-        <span> testviewd</span>
+        <!-- <span> testviewd</span> -->
         <span>
             <span id="busuanzi_value_page_pv"></span><span> views</span>
         </span>
-        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
       </p>
     </div>
   </div>
@@ -116,6 +115,8 @@ layout: compress
   </main>
 
   {% include footer.html %}
+  <!-- Load Busuanzi (counts) at end of body to ensure target elements exist -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   {% include mathjax.html %}
 </body>
 
